@@ -1,6 +1,7 @@
 <script lang="ts">
     import { fade } from "svelte/transition";
     import Intro from "$lib/Components/Intro.svelte";
+	import About from "$lib/Components/About.svelte";
 
     let activeWindow = $state('intro');
 
@@ -41,7 +42,7 @@
       </div>
     {:else if activeWindow === 'about'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
-        <h2 class="text-4xl font-bold opacity-20 italic">About Window coming soon...</h2>
+        <About />
       </div>
     {:else if activeWindow === 'contact'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
