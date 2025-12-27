@@ -3,7 +3,7 @@
     import { fly } from 'svelte/transition';
 
     let visible = $state(false);
-    let name = "Abdalkareem";
+    let name = "Abd-alkareem";
     let displayName = $state("");
     let index = 0;
     let interval: any; // Store the interval ID
