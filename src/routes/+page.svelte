@@ -4,6 +4,7 @@
 	  import About from "$lib/Components/About.svelte";
     import Skills from "$lib/Components/Skills.svelte";
     import Projects from "$lib/Components/Projects.svelte";
+    import Contact from "$lib/Components/Contact.svelte";
 
     let activeWindow = $state('intro');
 
@@ -53,9 +54,9 @@
       </div>
     {:else if activeWindow === 'contact'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
-        <h2 class="text-4xl font-bold opacity-20 italic">Contact Window coming soon...</h2>
+        <Contact />
       </div>
     {/if}
     
-    </main>
+  </main>
 </div>
