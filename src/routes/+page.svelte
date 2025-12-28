@@ -1,13 +1,15 @@
 <script lang="ts">
     import { fade } from "svelte/transition";
     import Intro from "$lib/Components/Intro.svelte";
-	import About from "$lib/Components/About.svelte";
+	  import About from "$lib/Components/About.svelte";
+    import Skills from "$lib/Components/Skills.svelte";
 
     let activeWindow = $state('intro');
 
     const tabs = [
         { id: 'intro', label: 'Intro' },
         { id: 'about', label: 'About' },
+        { id: 'skills', label: 'Skills' },
         { id: 'projects', label: 'Projects' },
         { id: 'contact', label: 'Contact' },
     ];
@@ -39,6 +41,10 @@
     {:else if activeWindow === 'projects'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
         <h2 class="text-4xl font-bold opacity-20 italic">Project Window coming soon...</h2>
+      </div>
+    {:else if activeWindow === 'skills'}
+      <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
+        <Skills />
       </div>
     {:else if activeWindow === 'about'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
