@@ -19,12 +19,12 @@
 
 <div class="h-svh w-full flex flex-col bg-slate-950 text-slate-200 overflow-hidden">
   
-  <header class="w-full flex justify-center p-6 z-50">
-    <nav class="flex items-center gap-1 bg-white/5 border border-white/10 backdrop-blur-xl p-1.5 rounded-2xl">
+  <header class="w-full flex justify-center p-4 md:p-6 z-50">
+    <nav class="flex items-center gap-1 bg-white/5 border border-white/10 backdrop-blur-xl p-1 rounded-2xl max-w-full overflow-x-auto no-scrollbar">
       {#each tabs as tab}
         <button 
           onclick={() => activeWindow = tab.id}
-          class="px-6 py-2 rounded-xl text-sm font-medium transition-all duration-300
+          class="px-3 md:px-6 py-2 rounded-xl text-xs md:text-sm font-medium transition-all duration-300 whitespace-nowrap
                  {activeWindow === tab.id 
                   ? 'bg-white/10 text-white shadow-lg' 
                   : 'hover:bg-white/5 text-slate-400 hover:text-slate-200'}"
