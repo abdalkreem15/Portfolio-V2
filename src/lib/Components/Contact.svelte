@@ -33,8 +33,8 @@
 </script>
 
 {#if visible}
-<section in:fade={{ duration: 400 }} class="h-full w-full flex items-center justify-center p-4 overflow-y-auto">
-  <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-white/5 border border-white/10 backdrop-blur-xl rounded-4xl p-8 md:p-12 shadow-2xl">
+<section in:fade={{ duration: 400 }} class="h-full w-full flex flex-col items-center justify-start p-4 pt-28 pb-12 overflow-y-auto">
+  <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl p-6 md:p-12 shadow-2xl">
     
     <div class="flex flex-col justify-between space-y-8">
       <div>
