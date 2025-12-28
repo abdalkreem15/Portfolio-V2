@@ -3,6 +3,7 @@
     import Intro from "$lib/Components/Intro.svelte";
 	  import About from "$lib/Components/About.svelte";
     import Skills from "$lib/Components/Skills.svelte";
+    import Projects from "$lib/Components/Projects.svelte";
 
     let activeWindow = $state('intro');
 
@@ -40,7 +41,7 @@
       </div>
     {:else if activeWindow === 'projects'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
-        <h2 class="text-4xl font-bold opacity-20 italic">Project Window coming soon...</h2>
+        <Projects />
       </div>
     {:else if activeWindow === 'skills'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
