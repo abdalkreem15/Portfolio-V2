@@ -10,7 +10,7 @@
   let userMessage = $state("");
 
   const myEmail = "abdalkareemalkafoury@gmail.com";
-  const phoneNumber = "+20 123 456 7890"; 
+  const phoneNumber = "+20 100 471 6157"; 
 
   function handleFormSubmit(e: Event) {
     e.preventDefault();
@@ -57,10 +57,10 @@
         </button>
 
         <div class="grid grid-cols-2 gap-4">
-          <a href="https://github.com/abdalkareem15" target="_blank" class="p-4 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all text-center">
+          <a href="https://github.com/abdalkreem15" target="_blank" class="p-4 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all text-center">
             <span class="text-white font-bold font-mono text-sm uppercase">GitHub</span>
           </a>
-          <a href="https://itch.io" target="_blank" class="p-4 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all text-center">
+          <a href="https://desert-coder.itch.io/" target="_blank" class="p-4 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all text-center">
             <span class="text-white font-bold font-mono text-sm uppercase">Itch.io</span>
           </a>
         </div>
