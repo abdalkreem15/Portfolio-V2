@@ -38,7 +38,7 @@
   <main class="grow relative">
     {#if activeWindow === 'intro'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0">
-        <Intro />
+        <Intro onNavigate={(tab: string) => activeWindow = tab} />
       </div>
     {:else if activeWindow === 'projects'}
       <div in:fade={{ duration: 400 }} class="absolute inset-0 flex items-center justify-center">
