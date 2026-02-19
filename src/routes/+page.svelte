@@ -17,7 +17,7 @@
     ];
 </script>
 
-<div class="h-svh w-full flex flex-col bg-slate-950 text-slate-200 overflow-hidden">
+<div class="h-svh w-full flex flex-col bg-slate-950 text-slate-200 overflow-hidden">`
   
   <header class="w-full flex justify-center p-4 md:p-6 z-50">
     <nav class="flex items-center gap-1 bg-white/5 border border-white/10 backdrop-blur-xl p-1 rounded-2xl max-w-full overflow-x-auto no-scrollbar">
